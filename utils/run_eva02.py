@@ -13,6 +13,7 @@ import numpy as np
 import cv2
 import os
 import torch
+import yaml
 
 from collections import defaultdict
 
@@ -140,7 +141,7 @@ def get_masks(img_filepath, save_masks=True):
     img_name = img_name.split('.')[0]
 
     #parent_path = '/root/home/vitor/'
-    output_dir = f'output/masks/{img_name}'
+    output_dir = f'outputs/eva_predictions/{img_name}'
     os.makedirs(output_dir, exist_ok=True)
 
     #first run EVA02 pretrained on COCO for obj_detection
@@ -347,5 +348,9 @@ def get_masks(img_filepath, save_masks=True):
     return
 
 if __name__ == "__main__":
-    get_masks("./input/0010.jpg")
-    get_masks("./input/0011.jpg")
+    with open('./cfg/folders_paths.yaml', 'r') as yaml_file:
+        input_folder = yaml.safe_load(yaml_file)['Paths']['input_folder']
+
+    input_list = sorted(os.path.join(input_folder, x) for x in os.listdir(input_folder) if x.lower().endswith('.jpg'))
+    for img_filepath in input_list:
+        get_masks(img_filepath)

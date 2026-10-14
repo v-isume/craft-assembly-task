@@ -1,0 +1,19 @@
+# Install PyTorch and Kaolin for your CUDA version first:
+#   https://pytorch.org/get-started/locally/
+#   https://kaolin.readthedocs.io/en/latest/notes/installation.html
+torch
+kaolin
+
+# EVA-02 detectron2 must be built from source (see README):
+#   cd EVA/EVA-02/det && python -m pip install -e .
+fvcore
+
+numpy
+scipy
+opencv-python
+Pillow
+imageio
+pyyaml
+packaging
+pymeshlab
+open3d

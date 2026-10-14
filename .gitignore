@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+
+# Large assets hosted externally
+weights/
+template_db/
+data/
+zip/
+
+# Upstream EVA clone
+EVA/
+
+# Generated results
+output/
+outputs/
+
+# Training-only / unused by the inference pipeline
+cfg/coco.py
+cfg/craft_loader.py
+cfg/config.yaml
+cfg/metrics.json
+utils/register_dataset.py
+
+# Input images (keep the empty folder)
+input/*
+!input/.gitkeep
