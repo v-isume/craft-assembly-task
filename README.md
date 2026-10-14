@@ -108,7 +108,15 @@ Paths are set in `cfg/folders_paths.yaml`. Keep `input_folder: './input'` and `o
 
 ## License
 
-This project is released under the [MIT License](LICENSE).
+The code in this repository is released under the [MIT License](LICENSE). The MIT License does not cover the template meshes in `template_db/`.
+
+### Template meshes
+
+Some of the 3D models used as template meshes in this work were created by maregajavier, PAndras, chirag.swamy.1993, oakar258, businessyuen, Daniel JIN, Intee Assets, Kemron and Poring and obtained under the [Creative Commons Attribution (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) license. Two models were created by vegu and VRC-IW and obtained under the [Creative Commons Attribution-NonCommercial (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/) license. One model, Serving Table 01, was created by Nichgon and released under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) (public domain). All models were collected from [Sketchfab](https://sketchfab.com/).
+
+The models were modified for this work: converted to OBJ, segmented into labeled parts, and recolored by part. The original creators do not endorse this work.
+
+Because some models are licensed for non-commercial use only, `template_db/` as a whole may only be used for non-commercial purposes. See `template_db/LICENSE.md` in the download for the source and license of each model.
 
 ## Acknowledgments
 
