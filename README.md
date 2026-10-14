@@ -63,7 +63,7 @@ These files must be downloaded separately into the repository root:
 | Path | Contents | Source |
 |---|---|---|
 | `weights/eva02_L_coco_det_sys_o365.pth` | EVA-02-L detector trained on Objects365 and COCO (finds the object class) | [EVA-02 det model zoo](https://github.com/baaivision/EVA/tree/master/EVA-02/det) |
-| `weights/model_final.pth` | EVA-02-L fine-tuned on craft parts | TODO: add link |
+| `weights/model_final.pth` | EVA-02-L fine-tuned on craft parts | [model_final.pth](https://drive.google.com/file/d/1gLZgCvnx8mtHaLkX5HzV13eA0NpjatX2/view?usp=sharing)|
 | `template_db/` | Labeled template meshes for each category | TODO: add link |
 
 ## Usage
